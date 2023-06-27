@@ -1,10 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-
-const App = () => {
-  return <div>React App #2</div>;
-};
+import { createRoot } from 'react-dom/client';
+import App from './App';
 
 Meteor.startup(() => {
-  ReactDOM.render(<App />, document.querySelector('.container'));
+  const domNode = document.querySelector('.app');
+  const root = createRoot(domNode);
+  root.render(<App />);
 });
