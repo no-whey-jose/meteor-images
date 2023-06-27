@@ -3,22 +3,22 @@ import ImageDetail from '../ImageDetail';
 
 const IMAGES = [
   {
-    title: 'Cigar',
-    link: 'https://images.unsplash.com/photo-1612659429508-b429d6b07ac1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNpZ2FyfGVufDB8fDB8fHww&w=1000&q=80',
+    title: 'Focaccia',
+    link: 'https://theglutenfreeaustrian.com/wp-content/uploads/2021/11/nokneadfocaccia10-720x720.jpg',
   },
   {
-    title: 'Frying Pan',
-    link: 'https://www.shutterstock.com/image-photo/black-iron-pan-isolated-on-260nw-1071952424.jpg',
+    title: 'Jam',
+    link: 'https://media.istockphoto.com/id/610751534/photo/jar-of-wild-berry-jam.jpg?s=612x612&w=0&k=20&c=hpL8sN_2mJJ7JlyU6R7uGDkPB8PD4uxRCaIupvE1MK4=',
   },
   {
-    title: 'Guitar',
-    link: 'https://www.stars-music.fr/medias/fender/player-tele-mex-mn-600-160398.jpg',
+    title: 'Sourdough',
+    link: 'https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/is-sourdough-bread-gluten-free-1296x728-feature.jpg?w=1155&h=1528',
   },
 ];
 
 const ImageList = () => {
   return (
-    <ul>
+    <ul className='media-list list-group'>
       {IMAGES.map((image, index) => (
         <ImageDetail image={image} key={`index-${image.title}`} />
       ))}
